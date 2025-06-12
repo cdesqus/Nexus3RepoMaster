@@ -1,10 +1,14 @@
 Deploy Nexus Registry
+
 A. Buat Namespace
 -> kubectl create namespace nexus
+
 B. Apply PVC (Persistent Volume)
 -> kubectl apply -f nexus-pvc.yaml
+
 C.Deploy Nexus
 -> kubectl apply -f nexus-deployment.yaml
+
 D. Expose Service (NodePort)
 -> kubectl apply -f nexus-service.yaml
 
