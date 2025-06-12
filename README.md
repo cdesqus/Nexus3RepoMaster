@@ -42,4 +42,21 @@ HTTP port: 5000
 
 Deployment policy: Allow redeploy
 
+
+
+
+Setting Docker Host
+----------------------
+Edit Docker config: sudo nano /etc/docker/daemon.json
+
+isi 
+{
+  "insecure-registries": ["<node-ip>:31235"]
+}
+
+lalu save dan restart : sudo systemctl restart docker
+
+
+
+
 Simpan
